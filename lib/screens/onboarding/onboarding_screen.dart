@@ -1,21 +1,21 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:logs_app/generated/locale_keys.g.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../common/custom_button.dart';
 import '../../constants/colors.dart';
 import 'onboarding_view.dart';
 
-const List onBoardingList = [
+List onBoardingList = [
   {
-    'title': 'Connect with\nEveryone on Globe',
-    'description':
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc.',
+    'title': LocaleKeys.boarding1_title.tr(),
+    'description': LocaleKeys.boarding1_description.tr(),
     'image': 'assets/images/onboarding1.png',
   },
   {
-    'title': 'Connect with\nEveryone on Globe',
-    'description':
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc.',
+    'title': LocaleKeys.boarding2_title.tr(),
+    'description': LocaleKeys.boarding2_description.tr(),
     'image': 'assets/images/onboarding2.png',
   }
 ];
@@ -29,14 +29,6 @@ class OnBoardingScreen extends StatefulWidget {
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
   final PageController controller = PageController(initialPage: 0);
-
-  // @override
-  // initState() {
-  //   super.initState();
-  //   controller.addListener(() {
-  //     setState(() {});
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -69,16 +61,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     ), // your preferred effect
                     onDotClicked: (index) {}),
                 const SizedBox(height: 20),
-                const Row(
+                Row(
                   children: [
                     GradientButton(
-                      text: 'Get Started',
+                      text: LocaleKeys.get_started.tr(),
                       width: 150,
                     ),
-                    Spacer(),
+                    const Spacer(),
                     GradientButton(
-                      text: 'Skip',
-                      gradientColors: [AppColors.white, AppColors.white],
+                      text: LocaleKeys.skip.tr(),
+                      gradientColors: const [AppColors.white, AppColors.white],
                       textColor: AppColors.text,
                       width: 120,
                     ),
