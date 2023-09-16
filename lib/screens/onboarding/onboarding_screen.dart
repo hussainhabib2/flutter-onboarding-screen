@@ -43,7 +43,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     return Scaffold(
       body: Column(
         children: [
-          Container(
+          SizedBox(
             height: MediaQuery.sizeOf(context).height * 0.8,
             child: PageView(
               controller: controller,
@@ -69,16 +69,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     ), // your preferred effect
                     onDotClicked: (index) {}),
                 const SizedBox(height: 20),
-                Row(
+                const Row(
                   children: [
                     GradientButton(
                       text: 'Get Started',
                       width: 150,
                     ),
-                    const Spacer(),
+                    Spacer(),
                     GradientButton(
                       text: 'Skip',
-                      gradientColors: const [AppColors.white, AppColors.white],
+                      gradientColors: [AppColors.white, AppColors.white],
                       textColor: AppColors.text,
                       width: 120,
                     ),

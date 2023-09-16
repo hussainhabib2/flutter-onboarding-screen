@@ -13,8 +13,9 @@ class CustomText extends StatelessWidget {
   final TextOverflow? overflow;
   final List<Shadow>? shadows;
 
-  CustomText(
-      {this.text,
+  const CustomText(
+      {super.key,
+      this.text,
       this.fontFamily,
       this.color,
       this.fontSize,

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:logs_app/common/custom_button.dart';
 import 'package:logs_app/constants/colors.dart';
-
 import '../../common/custom_text.dart';
 import 'onboarding_screen.dart';
 

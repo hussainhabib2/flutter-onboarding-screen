@@ -15,7 +15,8 @@ class GradientButton extends StatelessWidget {
   final int? maxLines;
   final FontWeight? fontWeight;
 
-  GradientButton({
+  const GradientButton({
+    super.key,
     this.text,
     this.onPressed,
     this.gradientColors,
@@ -48,7 +49,7 @@ class GradientButton extends StatelessWidget {
           ),
           child: Center(
             child: Padding(
-              padding: padding ?? EdgeInsets.all(0),
+              padding: padding ?? const EdgeInsets.all(0),
               child: Text(
                 text ?? "",
                 textAlign: textAlign ?? TextAlign.center,
