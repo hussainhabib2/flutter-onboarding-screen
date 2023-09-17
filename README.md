@@ -1,16 +1,21 @@
-# logs_app
+# Flutter Onboarding Screen UI
 
-A new Flutter project.
+Responsive flutter onboarding UI which can be used in different natures of mobile applications.
 
-## Getting Started
+## Technical Stuff
 
-This project is a starting point for a Flutter application.
+**Flutter Version Compatibility**: 3.13.0
+<br>
+**Uses null safety**: Yes
+<br>
+**Dart3 compatible**: Yes
+<br>
+**Packages Used**:
+<br>
+- Smooth Page Indicator
+- Google fonts
+- Easy localization
+- Device Preview
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot 2](ss2.png)
+![Screenshot 1](ss1.png)
