@@ -4,7 +4,7 @@ Responsive flutter onboarding UI which can be used in different natures of mobil
 
 ## Technical Stuff
 
-**Flutter Version Compatibility**: 3.13.0
+**Flutter Version Compatibility**: 3.16.0
 <br>
 **Uses null safety**: Yes
 <br>
