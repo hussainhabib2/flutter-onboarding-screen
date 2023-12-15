@@ -17,5 +17,5 @@ Responsive flutter onboarding UI which can be used in different natures of mobil
 - Easy localization
 - Device Preview
 
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
+<img src='screenshot1.png' width='350' height='800'>
+<img src='screenshot2.png' width='350' height='800'>
