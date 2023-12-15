@@ -1,6 +1,5 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:logs_app/screens/onboarding/onboarding_screen.dart';
 
@@ -17,8 +16,7 @@ Future<void> main() async {
       path: 'assets/translations',
       fallbackLocale: const Locale('en', 'US'),
       assetLoader: const CodegenLoader(),
-      child: DevicePreview(
-          enabled: !kReleaseMode, builder: (context) => const MyApp()),
+      child: DevicePreview(enabled: false, builder: (context) => const MyApp()),
     ),
   );
 }
